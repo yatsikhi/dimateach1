@@ -1,0 +1,104 @@
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #FFFFFF;
+}
+
+header {
+    background-color: #FFFFFF;
+    padding: 20px 0;
+}
+
+ul.Head {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+}
+
+ul.Head li {
+    margin: 0 20px;
+}
+
+ul.Head li a {
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.phone {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.color-switch {
+    display: flex;
+    gap: 10px;
+}
+
+.color-option {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.color-option.green {
+    background-color: #4CAF50;
+}
+
+.color-option.black {
+    background-color: #000000;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #E8F5E8;
+    border-radius: 10px;
+}
+
+.hero-text {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.education p {
+    font-size: 14px;
+    color: #555555;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
