@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
             <ul class="Head">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Обо мне</a></li>
-                <li><a href="#">Услуги</a></li>
-                <li><a href="#">Отзывы</a></li>
+                <li><a href="#hero">Главная</a></li>
+                <li><a href="#approach">Обо мне</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
                 <li class="phone">+7 999 000 12 00</li>
                 <li class="color-switch">
                     <div class="color-option green"></div>
@@ -27,7 +27,8 @@
     </header>
 
     <main>
-        <div class="hero">
+        <!-- Первый блок -->
+        <div id="hero" class="hero">
             <div class="hero-text">
                 <h1>ЭТО ДИМКА! МОЙ ДРУГ</h1>
                 <p>Я преподаю Историю уже 1,5 года и за это время помог более 25 ученикам улучшить оценки, сдать экзамены и побороть страх перед сложными темами.</p>
@@ -37,9 +38,109 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="catdima2.png" alt="Кот Дима">
+                <img src="path/to/your/cat-image.png" alt="Кот Дима">
+            </div>
+        </div>
+
+        <!-- Второй блок -->
+        <div id="approach" class="approach-container">
+            <div class="approach-text">
+                <h2>Я верю, что любой может понять даже самую сложную тему, если её правильно объяснить!</h2>
+                <p>Мой подход основан на индивидуальной программе для каждого ученика, живых примерах и постоянной обратной связи.</p>
+            </div>
+            <div class="approach-image">
+                <img src="path/to/your/cat-with-laptop-image.png" alt="Кот за ноутбуком">
+            </div>
+            <div class="approach-features">
+                <div class="feature-item">
+                    <input type="checkbox" checked disabled>
+                    <label>Минимум зубрёжки</label>
+                </div>
+                <div class="feature-item">
+                    <input type="checkbox" checked disabled>
+                    <label>Понимание истории</label>
+                </div>
+                <div class="feature-item">
+                    <input type="checkbox" checked disabled>
+                    <label>Глубокое знание материала</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Блок Услуги -->
+        <div id="services" class="services-container">
+            <h2>Услуги и цены</h2>
+            <p class="subtitle">бла бла бла</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Индивидуальный урок 60 минут</h3>
+                    <p>Персональная программа, домашнее задание, чат</p>
+                    <p class="price">1500 руб. →</p>
+                </div>
+                <div class="service-card">
+                    <h3>Пробный бесплатный урок для оценки знаний</h3>
+                    <p>Разбор типовых задач, теория, стратегия сдачи</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Блок Отзывы -->
+        <div id="reviews" class="reviews-container">
+            <h2>Отзывы</h2>
+            <p class="subtitle">бла бла бла</p>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <p class="review-text">«Дочь подтянула математику с тройки до четвёрки за полгода. Уроки понятные, ребёнок ходит с удовольствием. Рекомендую!»</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">😊</div>
+                        <div class="reviewer-info">
+                            <p class="reviewer-name">Стромилов</p>
+                            <p class="reviewer-description">бла бла</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">«Готовился с [Имя] к ЕГЭ по информатике. Объясняет без воды, только нужное. На экзамене чувствовал себя уверенно, сдал на 92 балла. Спасибо!»</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">👤</div>
+                        <div class="reviewer-info">
+                            <p class="reviewer-name">Андрей</p>
+                            <p class="reviewer-description">бла бла</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">«Лучший репетитор! Всё по полочкам, наконец-то понял химию.»</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">🥬</div>
+                        <div class="reviewer-info">
+                            <p class="reviewer-name">Капуста</p>
+                            <p class="reviewer-description">бла бла</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="signup" class="signup-container">
+            <div class="signup-content">
+                <div class="signup-text">
+                    <h2>Готов начать?<br>Запишись на пробный урок!</h2>
+                </div>
+                <div class="signup-description">
+                    <p>Оставь свои контакты, и я свяжусь с тобой в течение 24 часов, чтобы обсудить детали и выбрать удобное время для бесплатного 30-минутного занятия.</p>
+                    <form class="signup-form">
+                        <input type="text" placeholder="Оставь свое глупые имя и номер">
+                        <button type="submit">Записаться</button>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <p>© [Год] [Имя репетитора]. Репетитор по [предмет]. Все права защищены. [Политика конфиденциальности] · [Договор-oферта]</p>
+    </footer>
 </body>
 </html>
+

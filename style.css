@@ -1,7 +1,7 @@
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    margin: 0;
+    margin: 1;
     padding: 0;
     color: #333;
     background-color: #FFFFFF;
@@ -102,3 +102,268 @@ ul.Head li a {
     max-width: 100%;
     height: auto;
 }
+/* ВТОРАЯ СТРАНИЦА обо мне  */
+.approach-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.approach-text {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.approach-text h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.approach-text p {
+    font-size: 18px;
+    color: #555555;
+}
+
+.approach-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+    padding: 20px;
+}
+
+.approach-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.approach-features {
+    flex: 1;
+    min-width: 300px;
+    background-color: #C8E6C9;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.feature-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+/* Прокуртка  */
+html {
+    scroll-behavior: smooth;
+}
+/* Услуги */
+.services-container {
+    background-color: #C8E6C9;
+    padding: 40px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.services-container h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.services-container .subtitle {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 30px;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 15px;
+}
+
+.service-card .price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+}
+
+
+/* ОТЗОВЫ */
+
+.reviews-container {
+    background-color: #C8E6C9;
+    padding: 40px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.reviews-container h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.reviews-container .subtitle {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 30px;
+}
+
+.reviews-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.review-text {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+}
+
+.reviewer-avatar {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.reviewer-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewer-name {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.reviewer-description {
+    font-size: 14px;
+    color: #555555;
+    margin: 0;
+}
+/* ЖОПА */
+/* Форма записи */
+.signup-container {
+    background-color: #FFFFFF;
+    padding: 40px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+.signup-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.signup-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.signup-text h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.signup-description {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.signup-description p {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.signup-form {
+    display: flex;
+    gap: 10px;
+}
+
+.signup-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.signup-form button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Футер */
+.footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
