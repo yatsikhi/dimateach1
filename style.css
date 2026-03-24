@@ -1,7 +1,7 @@
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    margin: 1;
+    margin: 0;
     padding: 0;
     color: #333;
     background-color: #FFFFFF;
@@ -59,15 +59,20 @@ ul.Head li a {
     background-color: #000000;
 }
 
+/* Первый блок */
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
     background-color: #E8F5E8;
     border-radius: 10px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .hero-text {
@@ -95,31 +100,45 @@ ul.Head li a {
 
 .hero-image {
     flex: 1;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-image img {
-    max-width: 100%;
-    height: auto;
+    width: 300px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
 }
-/* ВТОРАЯ СТРАНИЦА обо мне  */
+.approach-image img {
+    width: 300px;
+    height: 320px;
+    border-radius: 10%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Второй блок */
 .approach-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
+    margin: 20px auto;
+    padding: 40px 20px;
     background-color: #FFFFFF;
-    border: 2px solid #ccc;
     border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+.approach-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .approach-text {
     flex: 1;
-    min-width: 300px;
-    padding: 20px;
+    padding-right: 40px;
 }
 
 .approach-text h2 {
@@ -136,9 +155,7 @@ ul.Head li a {
 
 .approach-image {
     flex: 1;
-    min-width: 300px;
     text-align: center;
-    padding: 20px;
 }
 
 .approach-image img {
@@ -148,7 +165,6 @@ ul.Head li a {
 
 .approach-features {
     flex: 1;
-    min-width: 300px;
     background-color: #C8E6C9;
     padding: 20px;
     border-radius: 10px;
@@ -164,16 +180,14 @@ ul.Head li a {
 .feature-item input[type="checkbox"] {
     margin-right: 10px;
 }
-/* Прокуртка  */
-html {
-    scroll-behavior: smooth;
-}
-/* Услуги */
+
+/* Блок Услуги */
 .services-container {
     background-color: #C8E6C9;
     padding: 40px 20px;
-    margin: 20px;
+    margin: 20px auto;
     border-radius: 10px;
+    max-width: 1200px;
     text-align: center;
 }
 
@@ -222,14 +236,13 @@ html {
     color: #000000;
 }
 
-
-/* ОТЗОВЫ */
-
+/* Блок Отзывы */
 .reviews-container {
     background-color: #C8E6C9;
     padding: 40px 20px;
-    margin: 20px;
+    margin: 20px auto;
     border-radius: 10px;
+    max-width: 1200px;
     text-align: center;
 }
 
@@ -293,22 +306,20 @@ html {
     color: #555555;
     margin: 0;
 }
-/* ЖОПА */
 /* Форма записи */
 .signup-container {
     background-color: #FFFFFF;
     padding: 40px 20px;
-    margin: 20px;
+    margin: 20px auto;
     border-radius: 10px;
     border: 2px solid #ccc;
+    max-width: 1200px;
 }
 
 .signup-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
     flex-wrap: wrap;
 }
 
@@ -366,4 +377,3 @@ html {
     padding: 20px;
     font-size: 14px;
 }
-
